@@ -1,11 +1,11 @@
 build:
-	docker-compose build
+	docker-compose build --no-cache
 
 up:
 	docker-compose up
 
 down:
-	docker-compose down
+	docker-compose down --remove-orphans
 
 backend_shell:
 	docker-compose exec backend bash
